@@ -44,32 +44,32 @@ SELECT \* FROM produtos WHERE id = 5;
 ❌ Erros Comuns
 
 1. Esquecer o WHERE:
-   \_ _forma errada_ ->
+   _forma errada_ ->
    SELECT \* FROM usuarios nome = Pedro;
    → Erro! O SQL não entende a condição sem o WHERE
 
-_forma correta_ ->
-SELECT \* FROM usuarios WHERE nome = 'Pedro';
+   _forma correta_ ->
+   SELECT \* FROM usuarios WHERE nome = 'Pedro';
 
 2. Esquecer as aspas em valores de texto:
-   \_ _forma errada_ ->
+   _forma errada_ ->
    SELECT \* FROM usuarios nome = Pedro;
    → Erro! o SQL procura Pedro na estrutura e não como o nome
 
-_forma correta_ ->
-SELECT _ FROM usuarios WHERE nome = 'Pedro';
-SELECT _ FROM usuarios WHERE nome = "Pedro";
+   _forma correta_ ->
+   SELECT _ FROM usuarios WHERE nome = 'Pedro';
+   SELECT _ FROM usuarios WHERE nome = "Pedro";
 
 3. Nomes com espaços (atenção ao texto completo):
    _nome na tabela = "Pedro Paulo"_
    \_ _forma errada_ ->
    SELECT \* FROM usuarios WHERE nome = 'Pedro';
 
-_forma correta_ ->
-SELECT _ FROM usuarios WHERE nome = 'Pedro Paulo';
-SELECT _ FROM usuarios WHERE nome = 'PEDRO PAULO;
-SELECT _ FROM usuarios WHERE nome = 'pedro paulo';
-SELECT _ FROM usuarios WHERE nome = 'pedro Paulo';
+   _forma correta_ ->
+   SELECT _ FROM usuarios WHERE nome = 'Pedro Paulo';
+   SELECT _ FROM usuarios WHERE nome = 'PEDRO PAULO;
+   SELECT _ FROM usuarios WHERE nome = 'pedro paulo';
+   SELECT _ FROM usuarios WHERE nome = 'pedro Paulo';
 
 ⚠️ Atenção com letras maiúsculas/minúsculas:
 Em bancos como PostgreSQL, a busca diferencia maiúsculas de minúsculas.
