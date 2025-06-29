@@ -164,7 +164,7 @@ O nome não será encontrado, pois o valor completo é "Pedro Paulo". Para isso,
 
 Porém, em nomes longos ou quando não sabemos o nome completo, podemos usar o operador LIKE, que permite filtrar textos parcialmente com curingas.
 
-_exemplo_
+_exemplos_
 
 -- Começa com "Pedro"
 
