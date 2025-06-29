@@ -203,11 +203,12 @@ _exemplos_
 📏 Estrutura BETWEEN
 
 - SELECT \* FROM _tabela_ WHERE coluna\* BETWEEN condicao1 AND condicao1;
-  _ -> usado para buscar valores entre dois limites (inclusive os extremos)_
+
+_ -> usado para buscar valores entre dois limites (inclusive os extremos)_
 
 - SELECT \* FROM tabela WHERE coluna NOT BETWEEN condicao1 AND condicao2;
 
-_-> Exclui valores que estejam dentro da faixa; traz apenas os fora do intervalo._
+_-> exclui valores que estejam dentro da faixa; traz apenas os fora do intervalo._
 
 📋 Estrutura IN
 
