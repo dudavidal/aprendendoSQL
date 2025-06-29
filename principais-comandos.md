@@ -151,3 +151,43 @@ _exemplo1_
   _-> produtos do fornecedor 6 com preço entre 300 e 1000_
 
 ---
+
+⚙️ WHERE LIKE
+
+-> Durante a explicação do WHERE, foi mostrado que se o nome da pessoa for "Pedro Paulo" e você fizer a consulta:
+
+- SELECT \_ FROM usuarios WHERE nome = 'Pedro';
+
+O nome não será encontrado, pois o valor completo é "Pedro Paulo". Para isso, teríamos que usar:
+
+- SELECT \_ FROM usuarios WHERE nome = 'Pedro Paulo';
+
+Porém, em nomes longos ou quando não sabemos o nome completo, podemos usar o operador LIKE, que permite filtrar textos parcialmente com curingas.
+
+_exemplo_
+
+-- Começa com "Pedro"
+
+- SELECT \* FROM usuarios WHERE nome LIKE 'Pedro%';
+
+-- Contém "Pedro" em qualquer parte
+
+- SELECT \* FROM usuarios WHERE nome LIKE '%Pedro%';
+
+-- Começa com a letra "B"
+
+- SELECT \* FROM usuarios WHERE nome LIKE 'B%';
+
+-- Termina com "Silva"
+
+- SELECT \* FROM usuarios WHERE nome LIKE '%Silva';
+
+-- Contém "Silva" em qualquer parte
+
+- SELECT \* FROM usuarios WHERE nome LIKE '%Silva%';
+
+📌 Resumo dos padrões:
+
+- 'TEXTO%' → começa com o texto
+- '%TEXTO' → termina com o texto
+- '%TEXTO%' → contém o texto em qualquer posição
