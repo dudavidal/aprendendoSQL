@@ -146,8 +146,8 @@ _exemplo1_
 
   _-> produtos com preço entre 300 e 1000 ou qualquer produto do fornecedor 6_
 
-  - SELECT \* FROM produtos WHERE id\*fornecedor = 6 AND (preco > 300 AND preco < 1000);
+- SELECT \* FROM produtos WHERE id\*fornecedor = 6 AND (preco > 300 AND preco < 1000);
 
-_-> produtos do fornecedor 6 com preço entre 300 e 1000_
+  _-> produtos do fornecedor 6 com preço entre 300 e 1000_
 
 ---
