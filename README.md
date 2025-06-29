@@ -2,7 +2,7 @@
 
 Este repositório reúne **todo o conteúdo que estou aprendendo no curso de SQL para Iniciantes da [B7Web](https://b7web.com.br/)**. A ideia é centralizar comandos, exemplos práticos e anotações de estudo — de forma simples, visual e útil para consulta rápida.
 
-📌 **Status:** Em andamento  
+📌 **Status:** Finalizado  
 📚 **Foco:** Sintaxe SQL, comandos básicos, consultas e relacionamentos
 
 ---
