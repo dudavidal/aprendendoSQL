@@ -11,7 +11,7 @@ Este repositório reúne **todo o conteúdo que estou aprendendo no curso de SQL
 
 ### 🧱 Básico
 
--[INFOBASICA](1.0-basico/01-info-basica.md)
+- [INFOBASICA](1.0-basico/01-info-basica.md)
 
 - [SELECT,WHERE, LIKE, BETWEEN, IN](1.0-basico/02-principais-comandos.md)
 - [ORDER BY & LIMIT](1.0-basico/03-orderBy-limit.md)
