@@ -1,4 +1,4 @@
-📌 PRINCIPAIS COMANDOS SQL 📌
+## 📌 PRINCIPAIS COMANDOS SQL 📌
 
 ## ✅ SELECT — usado para consultar dados em uma ou mais tabelas do banco de dados.
 
@@ -26,7 +26,7 @@ SELECT nome, preco FROM produtos;
 
 ---
 
-🧠 WHERE — usado para filtrar os dados que você quer receber
+## 🧠 WHERE — usado para filtrar os dados que você quer receber
 
 📋 Estrutura Básica
 
@@ -63,8 +63,6 @@ SELECT \* FROM usuarios WHERE nome = 'Pedro';
 _forma correta_ ->
 SELECT _ FROM usuarios WHERE nome = 'Pedro';
 SELECT _ FROM usuarios WHERE nome = "Pedro";
-
----
 
 3. Nomes com espaços (atenção ao texto completo):
    _nome na tabela = "Pedro Paulo"_
