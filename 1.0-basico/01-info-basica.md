@@ -11,16 +11,16 @@
 
 A sigla CRUD representa as quatro operações básicas feitas em um banco de dados:
 
-- **Create** → Criar ou inserir dados novos.  
+- **Create**: Criar ou inserir dados novos.  
   _Exemplo: adicionar um novo usuário._
 
-- **Read** → Ler ou \*\*consultar dados existentes.  
+- **Read**: Ler ou \*\*consultar dados existentes.  
   _Exemplo: visualizar todos os usuários cadastrados._
 
-- **Update** → Atualizar ou modificar dados.  
+- **Update**: Atualizar ou modificar dados.  
   _Exemplo: mudar o e-mail de um usuário._
 
-- **Delete** → Excluir dados do banco.  
+- **Delete**: Excluir dados do banco.  
   _Exemplo: remover um usuário que não usa mais o sistema._
 
 ---
@@ -57,50 +57,50 @@ Cada coluna de uma tabela no banco de dados possui informações como:
 
 ## Números Inteiros
 
-- INT → Usado para números inteiros comuns (ex: 1, 100, -5)
+- INT: Usado para números inteiros comuns (ex: 1, 100, -5)
 
-- TINYINT → Armazena números inteiros pequenos (1 byte)  
+- TINYINT: Armazena números inteiros pequenos (1 byte)  
   _Exemplo: valores de 0 a 255 (sem sinal) ou -128 a 127 (com sinal)_
 
-- BIGINT → Usado para inteiros muito grandes
+- BIGINT: Usado para inteiros muito grandes
   _Exemplo: ideal para contar registros ou armazenar grandes IDs_
 
 ---
 
 ### Números Reais (Decimais)
 
-- FLOAT → Armazena números com ponto flutuante (ex: 3.14, 1.618)
+- FLOAT: Armazena números com ponto flutuante (ex: 3.14, 1.618)
 
 ---
 
 ### 📝 Texto
 
-- VARCHAR(n)→ Armazena textos com limite definido de caracteres  
+- VARCHAR(n): Armazena textos com limite definido de caracteres  
   _Exemplo: `VARCHAR(255)` armazena até 255 caracteres (ideal para nomes, emails, etc.)_
 
-- TEXT → Armazena textos maiores (até 65.535 caracteres)  
+- TEXT: Armazena textos maiores (até 65.535 caracteres)  
   _Bom para descrições, comentários, etc._
 
-- LONGTEXT → Armazena textos muito grandes (até 4 GB!)  
+- LONGTEXT: Armazena textos muito grandes (até 4 GB!)  
   _Útil para conteúdos extensos, como artigos ou posts de blog_
 
 ---
 
 ## ⏱️ Tipos de Dados Temporais
 
-- DATE → Armazena uma data no formato internacional (AAAA-MM-DD)  
+- DATE: Armazena uma data no formato internacional (AAAA-MM-DD)  
   _Exemplo: `2005-02-20`_
 
-- TIME → Armazena um horário no formato `hh:mm:ss`  
+- TIME : Armazena um horário no formato `hh:mm:ss`  
   _Exemplo: `14:30:00`_
 
-- YEAR → Armazena apenas o ano  
+- YEAR: Armazena apenas o ano  
   _Exemplo: `2025`_
 
-- DATETIME → Armazena data e hora juntos  
+- DATETIME: Armazena data e hora juntos  
   _Exemplo: `2005-02-20 14:30:00`_
 
-- TIMESTAMP → Armazena data e hora como o número de segundos desde `1970-01-01` (Unix time).  
+- TIMESTAMP: Armazena data e hora como o número de segundos desde `1970-01-01` (Unix time).  
   Muito usado para registrar o momento exato em que algo aconteceu (ex: cadastro, login).
 
 > Obs: existem outros tipos, mas esses são os mais usados no dia a dia.
@@ -109,13 +109,13 @@ Cada coluna de uma tabela no banco de dados possui informações como:
 
 ## 🛠️ Recursos Importantes
 
-- Primary Key (chave primária) → Identifica unicamente cada linha da tabela.  
+- Primary Key (chave primária): Identifica unicamente cada linha da tabela.  
   Não pode repetir valores e geralmente é usada em campos como `id`.
 
-- AUTO*INCREMENT → Usado para fazer o valor da chave primária crescer sozinho a cada novo registro.  
+- AUTO*INCREMENT: Usado para fazer o valor da chave primária crescer sozinho a cada novo registro.  
   \_Evita repetições e facilita a criação de novos dados.*
 
-- Tamanho de campos → Ao criar uma coluna (ex: `VARCHAR(100)`), é importante definir o tamanho esperado do conteúdo, como nomes, descrições, etc.
+- Tamanho de campos: Ao criar uma coluna (ex: `VARCHAR(100)`), é importante definir o tamanho esperado do conteúdo, como nomes, descrições, etc.
 
 ---
 
