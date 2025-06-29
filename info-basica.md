@@ -118,3 +118,8 @@ Cada coluna de uma tabela no banco de dados possui informações como:
 - Tamanho de campos → Ao criar uma coluna (ex: `VARCHAR(100)`), é importante definir o tamanho esperado do conteúdo, como nomes, descrições, etc.
 
 ---
+
+🔗 Relações entre Tabelas
+Definir relacionamentos deixa o banco de dados mais organizado, prático e profissional.
+
+Ao precisar reaproveitar dados de outra tabela, use o ID unico do registro correspondente.
