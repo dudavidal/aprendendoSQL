@@ -27,14 +27,14 @@ Este repositório reúne **todo o conteúdo que estou aprendendo no curso de SQL
 
 ### 🔗 Relacionamentos
 
-- [JOIN 1 (Básico)](joins/06-join-1.md)
-- [JOIN 2 (Avançado)](joins/07-join-2.md)
+- [JOIN 1 (Básico)](3.0-joins/06-join1.md)
+- [JOIN 2 DICAS](3.0-joins/07-join2.md)
 
 ### 🛠️ CRUD
 
-- [INSERT INTO](crud/11-insert.md)
-- [UPDATE](crud/12-update.md)
-- [DELETE](crud/13-delete.md)
+- [INSERT INTO](5.0-crud/09-insert-into.md)
+- [UPDATE](5.0-crud/10-update.md)
+- [DELETE](5.0-crud/11-delete.md)
 
 ---
 
@@ -56,5 +56,3 @@ Estudar de forma ativa, com exemplos próprios e aplicações práticas, para:
 - Ter um material de apoio sempre à mão para revisão
 
 ---
-
-🧠 **Anotações organizadas por quem está aprendendo, para quem também quer aprender.**
