@@ -13,9 +13,8 @@
 
 _exemplo_
 
--- deleta todos os produtos do fornecedor de id 6
-DELETE FROM produtos
-WHERE id_fornecedor = 6;
+--deleta todos os produtos do fornecedor de id 6
+DELETE FROM produtos WHERE id_fornecedor = 6;
 
 ⚠️ ALERTA
 

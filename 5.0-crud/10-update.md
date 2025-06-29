@@ -29,7 +29,6 @@ UPDATE usuarios SET nome = "Pedro da silva", datacadastro = NOW() WHERE id = 2;
 ---
 
 ⚠️ ⚠️ ⚠️ ⚠️ ⚠️ ALERTA ⚠️ ⚠️ ⚠️ ⚠️ ⚠️
--------------UPDATE SEM O WHERE----------
 
 UPDATE usuarios
 SET nome = 'Pedro da Silva';
