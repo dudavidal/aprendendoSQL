@@ -204,7 +204,7 @@ _exemplos_
 
 - SELECT \* FROM _tabela_ WHERE coluna\* BETWEEN condicao1 AND condicao1;
 
-_ -> usado para buscar valores entre dois limites (inclusive os extremos)_
+_-> usado para buscar valores entre dois limites (inclusive os extremos)_
 
 - SELECT \* FROM tabela WHERE coluna NOT BETWEEN condicao1 AND condicao2;
 
