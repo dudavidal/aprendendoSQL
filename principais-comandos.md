@@ -3,8 +3,8 @@
 ## ✅ SELECT — usado para consultar dados em uma ou mais tabelas do banco de dados.
 
 📋 Estrutura Básica
-SELECT coluna1, coluna2
-FROM nome_da_tabela;
+
+SELECT coluna1, coluna2 FROM nome_da_tabela;
 
 - SELECT: palavra-chave que inicia a consulta
 - coluna1, coluna2: os campos que você quer visualizar (ex.: \*, id, nome, preco)
@@ -44,6 +44,7 @@ SELECT \* FROM produtos WHERE id = 5;
 ❌ Erros Comuns
 
 1. Esquecer o WHERE:
+
    _forma errada_ ->
    SELECT \* FROM usuarios nome = Pedro;
    → Erro! O SQL não entende a condição sem o WHERE
@@ -52,6 +53,7 @@ SELECT \* FROM produtos WHERE id = 5;
    SELECT \* FROM usuarios WHERE nome = 'Pedro';
 
 2. Esquecer as aspas em valores de texto:
+
    _forma errada_ ->
    SELECT \* FROM usuarios nome = Pedro;
    → Erro! o SQL procura Pedro na estrutura e não como o nome
@@ -61,8 +63,9 @@ SELECT \* FROM produtos WHERE id = 5;
    SELECT _ FROM usuarios WHERE nome = "Pedro";
 
 3. Nomes com espaços (atenção ao texto completo):
+
    _nome na tabela = "Pedro Paulo"_
-   \_ _forma errada_ ->
+   _forma errada_ ->
    SELECT \* FROM usuarios WHERE nome = 'Pedro';
 
    _forma correta_ ->
