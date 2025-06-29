@@ -154,6 +154,10 @@ _exemplo1_
 
 ⚙️ WHERE LIKE
 
+📋 Estrutura Básica
+
+- SELECT \* FROM produtos WHERE nome LIKE condição;
+
 -> Durante a explicação do WHERE, foi mostrado que se o nome da pessoa for "Pedro Paulo" e você fizer a consulta:
 
 - SELECT \_ FROM usuarios WHERE nome = 'Pedro';
@@ -191,3 +195,41 @@ _exemplos_
 - 'TEXTO%' → começa com o texto
 - '%TEXTO' → termina com o texto
 - '%TEXTO%' → contém o texto em qualquer posição
+
+---
+
+📂WHERE BETWEEN E IN
+
+📏 Estrutura BETWEEN
+
+- SELECT \* FROM _tabela_ WHERE coluna* BETWEEN condicao1 AND condicao1;
+  *-> usado para buscar valores entre dois limites (inclusive os extremos)\_
+
+- SELECT \* FROM tabela WHERE coluna NOT BETWEEN condicao1 AND condicao2;
+  _-> Exclui valores que estejam dentro da faixa; traz apenas os fora do intervalo._
+
+📋 Estrutura IN
+
+- SELECT \* FROM _tabela_ WHERE _coluna_ IN(condicao1,condicao2...);
+  _-> usado pra informações em listas_
+
+- SELECT \* FROM tabela WHERE coluna NOT IN (valor1, valor2, ...);
+  _-> Exclui valores presentes na lista; traz apenas os que não estão nela_
+
+_exemplos_
+
+-- Produtos com estoque entre 5 e 10 unidades
+
+- SELECT \* FROM produtos WHERE estoque BETWEEN 5 AND 10;
+
+-- Produtos do fornecedor 1 ou 6
+
+- SELECT \* FROM produtos WHERE id_fornecedor IN (1, 6);
+
+-- Produtos que não estão com o estoque entre 5 e 10 unidades
+
+- SELECT \* FROM produtos WHERE estoque NOT BETWEEN 5 AND 10;;
+
+--Produtos cujo fornecedor NÃO é 1 nem 6
+
+- SELECT \* FROM produtos WHERE id_fornecedor NOT IN (1,6);
