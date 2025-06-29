@@ -142,11 +142,12 @@ _exemplo1_
 
 ⚠️ CUIDADO COMO USA OS SINAIS
 
-- SELECT \* FROM produtos WHERE preco > 300 AND preco < 1000 OR id*fornecedor = 6;
-  *-> produtos com preço entre 300 e 1000 ou qualquer produto do fornecedor 6\_;
+- SELECT \* FROM produtos WHERE preco > 300 AND preco < 1000 OR id\*fornecedor = 6;
 
-  - SELECT \* FROM produtos WHERE id*fornecedor = 6 AND (preco > 300 AND preco < 1000);
-    ;
-    *-> produtos do fornecedor 6 com preço entre 300 e 1000\_;
+  _-> produtos com preço entre 300 e 1000 ou qualquer produto do fornecedor 6_
+
+  - SELECT \* FROM produtos WHERE id\*fornecedor = 6 AND (preco > 300 AND preco < 1000);
+
+_-> produtos do fornecedor 6 com preço entre 300 e 1000_
 
 ---
