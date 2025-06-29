@@ -29,10 +29,6 @@ SELECT \* FROM produtos ORDER BY minestoque DESC,nome ASC;
 
 ---
 
-##📌 LIMIT
-
-📋 Estrutura Básica
-
 ## 📌 LIMIT
 
 ### 📋 Estrutura básica

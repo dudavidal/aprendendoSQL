@@ -19,7 +19,11 @@ Este repositório reúne **todo o conteúdo que estou aprendendo no curso de SQL
 ### 📊 Agregações
 
 - [COUNT, AVG, SUM](2.0-agregacoes/04-count-avg-sum.md)
-- [GROUP BY](agregacoes/05-group-by.md)
+- [GROUP BY](2.0-agregacoes/05-groupby.md)
+
+### 🚀Avançado
+
+- [SUBQUERY](4.0-avancado/08-subquery.md)
 
 ### 🔗 Relacionamentos
 
