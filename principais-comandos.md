@@ -87,3 +87,66 @@ Em bancos como PostgreSQL, a busca diferencia maiúsculas de minúsculas.
 Nesse caso em bancos como MySQL, a busca não diferencia (por padrão).
 
 ---
+
+➕➖ Operadores e AND/OR
+
+Quando quiser buscar valores maiores, menores ou diferentes:
+
+- SELECT \* FROM produtos WHERE preco < 200;
+  _->produtos com preço menor que 200_
+
+- SELECT \* FROM produtos WHERE preco > 200;
+  _->produtos com preço maior que 200_
+
+- SELECT \* FROM produtos WHERE preco >= 200;
+  _->produtos com preço maior ou igual a 200_
+
+- SELECT \* FROM produtos WHERE preco <= 200;
+  _->produtos com preço menor ou igual a 200_
+
+- SELECT \* FROM produtos WHERE preco != 200;
+  _->produtos com preço diferente de 200_
+
+⚠️ Atenção: quando usar =, o sinal do operador vem primeiro (>=, <=, != etc).
+
+- SELECT \* FROM produtos WHERE estoque <= minestoque;
+- SELECT \* FROM produtos WHERE estoque >= minestoque;
+  _->ompara dois campos diferentes (ex: estoque atual e mínimo necessário)_
+  _->útil para verificar quais produtos precisam ser reabastecidos_
+
+---
+
+🛠️ Operador OR (ou)
+
+📋 Estrutura Básica
+
+- SELECT \* FROM produtos WHERE condicao1 OR condicao2;
+  _-retorna resultados que atendem à condição 1 ou à condição 2_
+
+_exemplo1_
+
+- SELECT \* FROM produtos WHERE preco = 200 OR preco = 140;
+  _-> verifica quais os produtos quem valem ou 200 ou vale 140_
+
+🛠️ Operador AND (e)
+
+📋 Estrutura Básica
+
+- SELECT \* FROM produtos WHERE condicao1 AND condicao2;
+  _->tem que ser tanto a condição1 quanto a condição2_
+
+_exemplo1_
+
+- SELECT \* FROM produtos WHERE preco >= 100 AND preco <= 999.99;
+  _-> verifica os produtos quem valem mais de 100 e menos de 999.99_;
+
+⚠️ CUIDADO COMO USA OS SINAIS
+
+- SELECT \* FROM produtos WHERE preco > 300 AND preco < 1000 OR id*fornecedor = 6;
+  *-> produtos com preço entre 300 e 1000 ou qualquer produto do fornecedor 6\_;
+
+  - SELECT \* FROM produtos WHERE id*fornecedor = 6 AND (preco > 300 AND preco < 1000);
+    ;
+    *-> produtos do fornecedor 6 com preço entre 300 e 1000\_;
+
+---
