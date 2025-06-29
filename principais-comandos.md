@@ -17,8 +17,6 @@ SELECT \* FROM nome_da_tabela;
 
 - indica que todas as colunas da tabela devem ser exibidas.
 
----
-
 🎯 Selecionar Colunas Específicas
 SELECT nome, preco FROM produtos;
 
@@ -42,8 +40,6 @@ SELECT \* FROM produtos WHERE id = 5;
 
 - Retorna o produto com ID 5 (filtragem por algo único é mais eficiente).
 - OBS: indicado pegar a filtragem com algo unico, nesse caso o id
-
----
 
 ❌ Erros Comuns
 
