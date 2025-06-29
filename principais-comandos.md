@@ -48,7 +48,7 @@ SELECT \* FROM produtos WHERE id = 5;
    _forma errada_ ->
 
    - SELECT \_ FROM usuarios nome = Pedro;
-     Erro! O SQL não entende a condição sem o WHERE
+     ->Erro! O SQL não entende a condição sem o WHERE
 
    _forma correta_ ->
 
@@ -59,7 +59,7 @@ SELECT \* FROM produtos WHERE id = 5;
    _forma errada_ ->
 
    - SELECT \_ FROM usuarios nome = Pedro;
-     Erro! o SQL procura Pedro na estrutura e não como o nome
+     ->Erro! o SQL procura Pedro na estrutura e não como o nome
 
    _forma correta_ ->
 
