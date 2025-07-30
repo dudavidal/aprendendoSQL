@@ -1,3 +1,7 @@
+<p align="center" style="font-size: 1.5rem;">
+  🌸 👩‍💻 🤓
+</p>
+
 # 🐘 Aprendizado de SQL — B7Web
 
 Este repositório reúne **todo o conteúdo que estou aprendendo no curso de SQL da [B7Web](https://b7web.com.br/)**. A ideia é centralizar comandos, exemplos práticos e anotações de estudo — de forma simples, visual e útil para consulta rápida.
